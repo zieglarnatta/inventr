@@ -1,0 +1,14 @@
+*.html
+*.xml
+local
+local.robot
+*.zip
+.DS_Store
+.gitignore
+.idea
+*.png
+*.log
+gecko*
+log.*
+*.py
+pol*
