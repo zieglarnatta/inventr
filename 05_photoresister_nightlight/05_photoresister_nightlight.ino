@@ -2,7 +2,7 @@
 const int sensorPin = 0;
 const int ledPin = 9;
 
-// set up globla variables for light level
+// set up global variables for light level
 int lightLevel;
 int calibratedlightLevel;  // use this to store claibrated light level
 int maxThreshold = 0;   // set the max light level
@@ -13,7 +13,6 @@ void setup()
   // put your setup code here, to run once:
   pinMode(ledPin, OUTPUT);  // set up LED pin to be output
   Serial.begin(9600);
-
 }
 
 void loop() 
@@ -39,6 +38,7 @@ void loop()
 //* so that your light sensor sees a full range of values. This will
 //* “autoCalibrate” to your range of input values. 
 //***********
+
 void autoRange()
 {
 if (lightLevel < minThreshold) // minThreshold was initialized to 1023 -- so, if it’s less, reset the threshold level.
